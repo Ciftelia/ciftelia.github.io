@@ -1,915 +1,343 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Klodiana Kamberi — Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klodiana Kamberi — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-      :root {
-        --navy: #04081f;
-        --pink: #ff1eb4;
-        --blue: #648cff;
-        --blue-dim: rgba(100, 140, 255, 0.15);
-        --text: #e8eaf6;
-        --muted: #8899bb;
-        --dim: #3d5080;
-        --orb: "Orbitron", monospace;
-        --body: "Syne", sans-serif;
-      }
+<!-- ===================== NAV ===================== -->
+<nav>
+  <a href="#hero" class="nav-logo">Ciftelia</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#career">Career</a></li>
+    <li><a href="#goals">Goals</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
+  </ul>
+</nav>
 
-      html {
-        scroll-behavior: smooth;
-      }
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div class="hero-eyebrow fade-up">IT Mobile QA Tester · Mobile Developer · York University</div>
+  <h1 class="fade-up delay-1">KLODIANA<br><span class="pink">KAMBERI</span></h1>
+  <div class="hero-links fade-up delay-2">
+    <a href="#career" class="btn btn-primary">View my work</a>
+    <a href="https://github.com/Ciftelia" class="btn btn-secondary" target="_blank">GitHub ↗</a>
+  </div>
+  <div class="tags fade-up delay-3">
+    <span class="tag tag-pink">Kotlin</span>
+    <span class="tag tag-blue">KMP</span>
+    <span class="tag tag-pink">Android</span>
+    <span class="tag tag-blue">Compose</span>
+    <span class="tag tag-pink">QA / Testing</span>
+    <span class="tag tag-blue">Azure DevOps</span>
+  </div>
+</section>
 
-      body {
-        background: var(--navy);
-        color: var(--text);
-        font-family: var(--body);
-        font-size: 16px;
-        line-height: 1.7;
-        overflow-x: hidden;
-        cursor: crosshair;
-      }
+<hr class="section-divider">
 
-      body::before {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background-image:
-          radial-gradient(
-            1px 1px at 15% 20%,
-            rgba(255, 255, 255, 0.4) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 40% 60%,
-            rgba(255, 255, 255, 0.3) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 65% 10%,
-            rgba(255, 255, 255, 0.5) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 80% 75%,
-            rgba(255, 255, 255, 0.3) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 25% 85%,
-            rgba(255, 255, 255, 0.4) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 90% 30%,
-            rgba(255, 255, 255, 0.3) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 55% 45%,
-            rgba(255, 255, 255, 0.2) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1px 1px at 10% 50%,
-            rgba(255, 255, 255, 0.4) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1.5px 1.5px at 35% 35%,
-            rgba(255, 30, 180, 0.3) 0%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1.5px 1.5px at 85% 55%,
-            rgba(100, 140, 255, 0.3) 0%,
-            transparent 100%
-          );
-        pointer-events: none;
-        z-index: 0;
-      }
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="section-label">// about.log</div>
+  <h2>About <span>Me</span></h2>
 
-      body::after {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background: repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 2px,
-          rgba(0, 0, 0, 0.03) 2px,
-          rgba(0, 0, 0, 0.03) 4px
-        );
-        pointer-events: none;
-        z-index: 0;
-      }
+  <div style="border:1px solid rgba(255,30,180,0.18);border-radius:3px;overflow:hidden;margin-bottom:2.5rem;background:rgba(13,20,64,0.5);">
+    <div class="about-card-label" style="padding:0.75rem 1rem;">// about me video</div>
+    <video controls style="width:100%;display:block;max-height:480px;background:#000;">
+      <source src="video2473503368.mp4" type="video/mp4">
+    </video>
+  </div>
 
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1.25rem 4rem;
-        background: rgba(4, 8, 31, 0.85);
-        border-bottom: 1px solid rgba(255, 30, 180, 0.12);
-        backdrop-filter: blur(12px);
-      }
+  <p style="color:var(--muted);max-width:640px;font-size:0.95rem;line-height:1.85;margin-bottom:1.5rem;">
+    This portfolio documents where I am in my career, what I've built, and how I think — put together as part of COOP 2100 at York University's Lassonde School of Engineering and kept as a living record going forward.
+  </p>
+  <p style="color:var(--muted);max-width:640px;font-size:0.95rem;line-height:1.85;margin-bottom:1.5rem;">
+    I'm Klodiana Kamberi (she/her), a third-year Computer Science student at York University's Lassonde School of Engineering. My program covers software engineering, systems, and applied development — and I've tried to push that into practice wherever I can, from university research labs to a real QA internship.
+  </p>
+  <p style="color:var(--muted);max-width:640px;font-size:0.95rem;line-height:1.85;margin-bottom:2rem;">
+    I gravitated toward mobile development because building an app is the most direct way to write code that interacts with an operating system in something people can actually hold and use. Kotlin made that click for me — and Kotlin Multiplatform means I'm not locked to one platform. A real device, with real gestures and real constraints, is a different problem than building for the web. That difference is what keeps me interested.
+  </p>
 
-      .nav-logo {
-        font-family: var(--orb);
-        font-size: 13px;
-        font-weight: 700;
-        color: var(--pink);
-        letter-spacing: 2px;
-        text-decoration: none;
-      }
-      .nav-links {
-        display: flex;
-        gap: 2.5rem;
-        list-style: none;
-      }
-      .nav-links a {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 2px;
-        color: var(--dim);
-        text-decoration: none;
-        transition: color 0.2s;
-        text-transform: uppercase;
-      }
-      .nav-links a:hover {
-        color: var(--pink);
-      }
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="about-card-label">// program</div>
+      <p>BSc Computer Science at York University's Lassonde School of Engineering. Coursework in software design, operating systems, networking, data structures, and object-oriented programming.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-card-label">// focus</div>
+      <p>Mobile development with Kotlin Multiplatform and Jetpack Compose. Cross-platform experiences that feel native on every device.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-card-label">// currently</div>
+      <p>Interning as an IT Mobile QA Tester at FGF Brands while finishing my degree. Exploring automation tooling and API testing beyond the UI layer.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-card-label">// background</div>
+      <p>Previously a Research Assistant at York's Social Robotics Lab — built automation pipelines, webhook integrations, and a ROS2 motor control node.</p>
+    </div>
+  </div>
 
-      section {
-        position: relative;
-        z-index: 1;
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 7rem 2rem 4rem;
-      }
+  <div class="reflection-block" style="margin-top:2rem;">
+    <div class="reflection-label">// reflection</div>
+    <p>When I started this degree I had a general interest in computers but no real direction. Focusing on mobile felt like a narrowing at the time — it was actually the opposite. It forced me to understand how software interacts with hardware, how UI decisions affect performance, and how to think about users as people with real expectations. Working in QA sharpened that further. You can't test software well without understanding it deeply, and you can't understand it deeply without caring about how it behaves at the edges. That mindset now carries into everything I build.</p>
+  </div>
+</section>
 
-      .section-label {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 3px;
-        color: var(--pink);
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-      .section-label::after {
-        content: "";
-        flex: 1;
-        height: 1px;
-        background: rgba(255, 30, 180, 0.2);
-        max-width: 120px;
-      }
+<hr class="section-divider">
 
-      #hero {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 6rem;
-      }
+<!-- ===================== CAREER ===================== -->
+<section id="career">
+  <div class="section-label">// career.exe</div>
+  <h2>Career & <span>Education</span></h2>
 
-      .hero-eyebrow {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 4px;
-        color: var(--dim);
-        margin-bottom: 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .hero-eyebrow::before {
-        content: "";
-        display: inline-block;
-        width: 6px;
-        height: 6px;
-        background: var(--pink);
-        border-radius: 1px;
-        animation: blink 1.5s ease-in-out infinite;
-      }
+  <p class="sub-heading">— EXPERIENCE —</p>
 
-      @keyframes blink {
-        0%,
-        100% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.2;
-        }
-      }
-
-      h1 {
-        font-family: var(--orb);
-        font-size: clamp(2.8rem, 7vw, 5.5rem);
-        font-weight: 900;
-        line-height: 1;
-        letter-spacing: -1px;
-        color: var(--text);
-      }
-      h1 .pink {
-        color: var(--pink);
-      }
-
-      .hero-desc {
-        font-size: 1rem;
-        color: var(--muted);
-        max-width: 560px;
-        margin: 1.5rem 0 2.5rem;
-        line-height: 1.8;
-      }
-      .hero-links {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      .btn {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 2px;
-        padding: 12px 28px;
-        border-radius: 2px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.2s;
-        text-transform: uppercase;
-        display: inline-block;
-        border: 1px solid;
-      }
-      .btn-primary {
-        background: var(--pink);
-        color: #fff;
-        border-color: var(--pink);
-      }
-      .btn-primary:hover {
-        background: transparent;
-        color: var(--pink);
-      }
-      .btn-secondary {
-        background: transparent;
-        color: var(--blue);
-        border-color: rgba(100, 140, 255, 0.4);
-      }
-      .btn-secondary:hover {
-        background: var(--blue-dim);
-        border-color: var(--blue);
-      }
-
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 2rem;
-      }
-      .tag {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 1px;
-        padding: 5px 14px;
-        border-radius: 2px;
-        text-transform: uppercase;
-      }
-      .tag-pink {
-        background: rgba(255, 30, 180, 0.08);
-        border: 1px solid rgba(255, 30, 180, 0.3);
-        color: var(--pink);
-      }
-      .tag-blue {
-        background: rgba(100, 140, 255, 0.08);
-        border: 1px solid rgba(100, 140, 255, 0.3);
-        color: var(--blue);
-      }
-
-      h2 {
-        font-family: var(--orb);
-        font-size: clamp(1.6rem, 4vw, 2.4rem);
-        font-weight: 700;
-        color: var(--text);
-        margin-bottom: 1.5rem;
-        letter-spacing: -0.5px;
-      }
-      h2 span {
-        color: var(--pink);
-      }
-
-      .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-      }
-
-      .about-card {
-        background: rgba(13, 20, 64, 0.6);
-        border: 1px solid rgba(255, 30, 180, 0.12);
-        border-radius: 3px;
-        padding: 1.5rem;
-        position: relative;
-        transition: border-color 0.2s;
-      }
-      .about-card::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 3px;
-        height: 100%;
-        background: var(--pink);
-        border-radius: 3px 0 0 3px;
-        opacity: 0;
-        transition: opacity 0.2s;
-      }
-      .about-card:hover {
-        border-color: rgba(255, 30, 180, 0.3);
-      }
-      .about-card:hover::before {
-        opacity: 1;
-      }
-      .about-card-label {
-        font-family: var(--orb);
-        font-size: 8px;
-        letter-spacing: 2px;
-        color: var(--pink);
-        margin-bottom: 0.6rem;
-      }
-      .about-card p {
-        font-size: 0.9rem;
-        color: var(--muted);
-        line-height: 1.7;
-      }
-
-      .career-block {
-        margin-bottom: 1.5rem;
-        border: 1px solid rgba(100, 140, 255, 0.12);
-        border-left: 3px solid var(--blue);
-        border-radius: 0 3px 3px 0;
-        padding: 1.5rem 1.75rem;
-        background: rgba(13, 20, 64, 0.4);
-        transition:
-          border-color 0.2s,
-          background 0.2s;
-      }
-      .career-block:hover {
-        border-color: rgba(100, 140, 255, 0.35);
-        background: rgba(13, 20, 64, 0.7);
-      }
-      .career-block.pink-accent {
-        border-left-color: var(--pink);
-        border-color: rgba(255, 30, 180, 0.12);
-      }
-      .career-block.pink-accent:hover {
-        border-color: rgba(255, 30, 180, 0.35);
-      }
-
-      .career-meta {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-bottom: 0.4rem;
-      }
-      .career-title {
-        font-family: var(--orb);
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--text);
-      }
-      .career-date {
-        font-family: var(--orb);
-        font-size: 8px;
-        letter-spacing: 2px;
-        color: var(--dim);
-      }
-      .career-org {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 1px;
-        color: var(--pink);
-        margin-bottom: 0.75rem;
-      }
-
-      .career-desc {
-        font-size: 0.9rem;
-        color: var(--muted);
-        line-height: 1.75;
-      }
-      .career-desc ul {
-        padding-left: 1.2rem;
-        margin-top: 0.5rem;
-      }
-      .career-desc ul li {
-        margin-bottom: 0.4rem;
-      }
-
-      .sub-heading {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 2px;
-        color: var(--dim);
-        margin-bottom: 1.5rem;
-      }
-
-      .project-card {
-        border: 1px solid rgba(255, 30, 180, 0.18);
-        border-radius: 3px;
-        padding: 1.75rem;
-        background: rgba(13, 20, 64, 0.5);
-        position: relative;
-        overflow: hidden;
-        transition: border-color 0.2s;
-      }
-      .project-card::after {
-        content: "NAVI";
-        font-family: var(--orb);
-        font-size: 6rem;
-        font-weight: 900;
-        color: rgba(255, 30, 180, 0.03);
-        position: absolute;
-        bottom: -1rem;
-        right: 1rem;
-        letter-spacing: -2px;
-        pointer-events: none;
-      }
-      .project-card:hover {
-        border-color: rgba(255, 30, 180, 0.4);
-      }
-      .project-name {
-        font-family: var(--orb);
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: var(--pink);
-        margin-bottom: 0.2rem;
-      }
-      .project-role {
-        font-family: var(--orb);
-        font-size: 8px;
-        letter-spacing: 2px;
-        color: var(--dim);
-        margin-bottom: 0.8rem;
-      }
-      .project-desc {
-        font-size: 0.9rem;
-        color: var(--muted);
-        margin-bottom: 1.25rem;
-        line-height: 1.75;
-        max-width: 560px;
-      }
-
-      .resume-box {
-        border: 1px dashed rgba(255, 30, 180, 0.25);
-        border-radius: 3px;
-        padding: 3rem 2rem;
-        text-align: center;
-        background: rgba(255, 30, 180, 0.03);
-        transition: background 0.2s;
-      }
-      .resume-box:hover {
-        background: rgba(255, 30, 180, 0.06);
-      }
-      .resume-icon {
-        font-family: var(--orb);
-        font-size: 2rem;
-        color: rgba(255, 30, 180, 0.3);
-        margin-bottom: 1rem;
-        display: block;
-      }
-      .resume-box p {
-        font-size: 0.85rem;
-        color: var(--dim);
-        margin-bottom: 1.5rem;
-        font-family: var(--orb);
-        letter-spacing: 1px;
-      }
-
-      footer {
-        position: relative;
-        z-index: 1;
-        border-top: 1px solid rgba(255, 30, 180, 0.1);
-        padding: 2.5rem 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 900px;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-      .footer-name {
-        font-family: var(--orb);
-        font-size: 10px;
-        letter-spacing: 2px;
-        color: var(--dim);
-      }
-      .footer-links {
-        display: flex;
-        gap: 1.5rem;
-      }
-      .footer-links a {
-        font-family: var(--orb);
-        font-size: 9px;
-        letter-spacing: 1px;
-        color: var(--dim);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      .footer-links a:hover {
-        color: var(--pink);
-      }
-
-      .section-divider {
-        border: none;
-        border-top: 1px solid rgba(100, 140, 255, 0.08);
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      @keyframes fadeUp {
-        from {
-          opacity: 0;
-          transform: translateY(24px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .fade-up {
-        opacity: 0;
-        animation: fadeUp 0.7s ease forwards;
-      }
-      .delay-1 {
-        animation-delay: 0.1s;
-      }
-      .delay-2 {
-        animation-delay: 0.25s;
-      }
-      .delay-3 {
-        animation-delay: 0.4s;
-      }
-      .delay-4 {
-        animation-delay: 0.55s;
-      }
-
-      @media (max-width: 680px) {
-        nav {
-          padding: 1rem 1.5rem;
-        }
-        .nav-links {
-          gap: 1.25rem;
-        }
-        section {
-          padding: 6rem 1.5rem 3rem;
-        }
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
-        footer {
-          padding: 2rem 1.5rem;
-        }
-        h1 {
-          font-size: 2.4rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="#hero" class="nav-logo">Ciftelia</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#career">Career</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+  <div class="career-block pink-accent">
+    <div class="career-meta">
+      <span class="career-title">IT Mobile QA Tester (Intern)</span>
+      <span class="career-date">Jan 2026 – Present</span>
+    </div>
+    <div class="career-org">FGF Brands / Cerebro · Toronto, Canada</div>
+    <div class="career-desc">
+      <ul>
+        <li>Pre-release validation of an internal Android enterprise application — functional, regression, and configuration-based testing prior to production deployment.</li>
+        <li>Traces data inconsistency issues across frontend interactions and API responses for faster root-cause identification.</li>
+        <li>Creates and maintains structured test plans in Azure DevOps covering feature flows, edge cases, and release-readiness scenarios.</li>
+        <li>Develops API integration test collections in Postman to validate backend responses and data consistency beyond the UI layer.</li>
       </ul>
-    </nav>
+    </div>
+    <div class="tags" style="margin-top:1rem;">
+      <span class="tag tag-pink">Android</span>
+      <span class="tag tag-pink">Azure DevOps</span>
+      <span class="tag tag-pink">Postman</span>
+      <span class="tag tag-pink">Regression Testing</span>
+    </div>
+  </div>
 
-    <!-- HERO -->
-    <section id="hero">
-      <div class="hero-eyebrow fade-up">
-        IT Mobile QA Tester · Mobile Developer · York University
-      </div>
-      <h1 class="fade-up delay-1">
-        KLODIANA<br /><span class="pink">KAMBERI</span>
-      </h1>
-      <div class="hero-links fade-up delay-2">
-        <a href="#career" class="btn btn-primary">View my work</a>
-        <a
-          href="https://github.com/Ciftelia"
-          class="btn btn-secondary"
-          target="_blank"
-          >GitHub ↗</a
-        >
-      </div>
-      <div class="tags fade-up delay-3">
-        <span class="tag tag-pink">Kotlin</span>
-        <span class="tag tag-blue">KMP</span>
-        <span class="tag tag-pink">Android</span>
-        <span class="tag tag-blue">Compose</span>
-        <span class="tag tag-pink">QA / Testing</span>
-        <span class="tag tag-blue">Python</span>
-        <span class="tag tag-pink">Selenium</span>
-        <span class="tag tag-blue">Postman</span>
-        <span class="tag tag-pink">Azure DevOps</span>
-        <span class="tag tag-blue">Docker</span>
-      </div>
-    </section>
+  <div class="career-block">
+    <div class="career-meta">
+      <span class="career-title">Research Assistant & Programmer</span>
+      <span class="career-date">May – Sep 2025</span>
+    </div>
+    <div class="career-org" style="color:var(--blue);">York University — Social Robotics Lab · Toronto, Canada</div>
+    <div class="career-desc">
+      <ul>
+        <li>Built a Python/Selenium automation pipeline that eliminated a 5-hour manual step repeated 5–6 times during development.</li>
+        <li>Developed an automation bot coordinating approximately 30 trial sessions, assigning participants and issuing approximately 60 reminders.</li>
+        <li>Implemented webhook integrations delivering approximately 30 real-time booking alerts to improve team awareness.</li>
+        <li>Built a ROS2 node to control a vibration motor, contributing to updated robot interaction behaviours.</li>
+      </ul>
+    </div>
+    <div class="tags" style="margin-top:1rem;">
+      <span class="tag tag-blue">Python</span>
+      <span class="tag tag-blue">Selenium</span>
+      <span class="tag tag-blue">ROS2</span>
+      <span class="tag tag-blue">Webhooks</span>
+    </div>
+  </div>
 
-    <hr class="section-divider" />
+  <div class="career-block">
+    <div class="career-meta">
+      <span class="career-title">Lead Research Assistant</span>
+      <span class="career-date">May – Sep 2024</span>
+    </div>
+    <div class="career-org" style="color:var(--blue);">York University — Social Robotics Lab · Toronto, Canada</div>
+    <div class="career-desc">
+      <ul>
+        <li>Supervised and trained a team of seven volunteers supporting student learning sessions with the Abii educational robot.</li>
+        <li>Created the digital feedback form used to collect participant responses for ongoing research.</li>
+        <li>Supported 20–30 student sessions; recognised for initiative and recommended for a Teaching Assistant position.</li>
+      </ul>
+    </div>
+    <div class="tags" style="margin-top:1rem;">
+      <span class="tag tag-blue">Team Leadership</span>
+      <span class="tag tag-blue">Research</span>
+    </div>
+  </div>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="section-label">// about.log</div>
-      <h2>About <span>Me</span></h2>
-      <p style="color: var(--muted); max-width: 600px; font-size: 0.95rem">
-        I'm Klodiana (she/her) — a Computer Science student at York University
-        with a detail-oriented mindset shaped by real QA work and research. I'm
-        drawn to the intersection of quality and mobile engineering: building
-        things that actually hold up under pressure, and finding the edge cases
-        others miss.
-      </p>
-      <div class="about-grid">
-        <div class="about-card">
-          <div class="about-card-label">// focus</div>
-          <p>
-            Mobile development with Kotlin Multiplatform and Jetpack Compose.
-            Cross-platform experiences that feel native on every device.
-          </p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-label">// approach</div>
-          <p>
-            Quality-first mindset from real-world QA. I think in test cases —
-            functional flows, edge cases, data inconsistencies, and what breaks
-            under load.
-          </p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-label">// currently</div>
-          <p>
-            Interning as an IT Mobile QA Tester at FGF Brands while finishing my
-            degree. Exploring automation tooling and API testing beyond the UI
-            layer.
-          </p>
-        </div>
-        <div class="about-card">
-          <div class="about-card-label">// background</div>
-          <p>
-            Previously a Research Assistant at York's Social Robotics Lab —
-            built automation pipelines, webhook integrations, and a ROS2 motor
-            control node.
-          </p>
-        </div>
-      </div>
-    </section>
+  <p class="sub-heading" style="margin-top:2rem;">— EDUCATION —</p>
 
-    <hr class="section-divider" />
+  <div class="career-block">
+    <div class="career-meta">
+      <span class="career-title">BSc Computer Science</span>
+      <span class="career-date">Sep 2023 – Apr 2027 (Expected)</span>
+    </div>
+    <div class="career-org" style="color:var(--blue);">York University · Toronto, Canada</div>
+    <p class="career-desc" style="margin-bottom:1rem;">GPA 3.73/4.00.</p>
+    <p style="font-family:var(--orb);font-size:8px;letter-spacing:2px;color:var(--dim);margin-bottom:0.6rem;">Relevant Courses</p>
+    <div class="tags" style="margin-top:0;">
+      <span class="tag tag-blue">Software Design</span>
+      <span class="tag tag-blue">Operating Systems</span>
+      <span class="tag tag-blue">Computer Networking</span>
+      <span class="tag tag-blue">Data Structures & Algorithms</span>
+      <span class="tag tag-blue">OOP in Java</span>
+      <span class="tag tag-blue">Agile / Scrum</span>
+      <span class="tag tag-blue">Mobile Development</span>
+    </div>
+  </div>
 
-    <!-- CAREER -->
-    <section id="career">
-      <div class="section-label">// career.exe</div>
-      <h2>Career & <span>Education</span></h2>
+  <div class="reflection-block blue" style="margin-top:1rem;">
+    <div class="reflection-label">// reflection</div>
+    <p>The QA internship taught me things a classroom couldn't. I expected to learn about testing tools and bug tracking — I did — but what I didn't expect was how much the role would develop my ability to communicate across a team. Finding a bug is only half the work; explaining it clearly, reproducing it reliably, and working with developers to fix it without friction is the other half. I'm more confident in what I know than I was a year ago, and more aware of what I still need to learn. The robotics lab was a different kind of growth — working autonomously on open-ended problems, building tools that other researchers actually depended on, and figuring things out without a spec sheet. Both experiences shaped how I approach any technical problem now.</p>
+  </div>
+</section>
 
-      <p class="sub-heading">— EXPERIENCE —</p>
+<hr class="section-divider">
 
-      <div class="career-block pink-accent">
-        <div class="career-meta">
-          <span class="career-title">IT Mobile QA Tester (Intern)</span>
-          <span class="career-date">Jan 2026 – Present</span>
-        </div>
-        <div class="career-org">FGF Brands / Cerebro · Toronto, Canada</div>
-        <div class="career-desc">
-          <ul>
-            <li>
-              Pre-release validation of an internal Android enterprise
-              application — functional, regression, and configuration-based
-              testing prior to production deployment.
-            </li>
-            <li>
-              Traces data inconsistency issues across frontend interactions and
-              API responses for faster root-cause identification.
-            </li>
-            <li>
-              Creates and maintains structured test plans in Azure DevOps
-              covering feature flows, edge cases, and release-readiness
-              scenarios.
-            </li>
-            <li>
-              Develops API integration test collections in Postman to validate
-              backend responses and data consistency beyond the UI layer.
-            </li>
-          </ul>
-        </div>
-        <div class="tags" style="margin-top: 1rem">
-          <span class="tag tag-pink">Android</span>
-          <span class="tag tag-pink">Azure DevOps</span>
-          <span class="tag tag-pink">Postman</span>
-          <span class="tag tag-pink">Regression Testing</span>
-        </div>
-      </div>
+<!-- ===================== GOALS ===================== -->
+<section id="goals">
+  <div class="section-label">// goals.json</div>
+  <h2>Discover <span>Myself</span></h2>
 
-      <div class="career-block">
-        <div class="career-meta">
-          <span class="career-title">Research Assistant & Programmer</span>
-          <span class="career-date">May – Sep 2025</span>
-        </div>
-        <div class="career-org" style="color: var(--blue)">
-          York University — Social Robotics Lab · Toronto, Canada
-        </div>
-        <div class="career-desc">
-          <ul>
-            <li>
-              Built a Python/Selenium automation pipeline that eliminated a
-              5-hour manual step repeated 5–6 times during development.
-            </li>
-            <li>
-              Developed an automation bot coordinating ~30 trial sessions,
-              assigning participants and issuing ~60 reminders.
-            </li>
-            <li>
-              Implemented webhook integrations delivering ~30 real-time booking
-              alerts to improve team awareness.
-            </li>
-            <li>
-              Built a ROS2 node to control a vibration motor, contributing to
-              updated robot interaction behaviours.
-            </li>
-          </ul>
-        </div>
-        <div class="tags" style="margin-top: 1rem">
-          <span class="tag tag-blue">Python</span>
-          <span class="tag tag-blue">Selenium</span>
-          <span class="tag tag-blue">ROS2</span>
-          <span class="tag tag-blue">Webhooks</span>
-        </div>
-      </div>
+  <!-- DREAMS & GOALS -->
+  <p class="sub-heading">— DREAMS & GOALS —</p>
 
-      <div class="career-block">
-        <div class="career-meta">
-          <span class="career-title">Lead Research Assistant</span>
-          <span class="career-date">May – Sep 2024</span>
-        </div>
-        <div class="career-org" style="color: var(--blue)">
-          York University — Social Robotics Lab · Toronto, Canada
-        </div>
-        <div class="career-desc">
-          <ul>
-            <li>
-              Supervised and trained a team of seven volunteers supporting
-              student learning sessions with the Abii educational robot.
-            </li>
-            <li>
-              Created the digital feedback form used to collect participant
-              responses for ongoing research.
-            </li>
-            <li>
-              Supported 20–30 student sessions; recognised for initiative and
-              recommended for a Teaching Assistant position.
-            </li>
-          </ul>
-        </div>
-        <div class="tags" style="margin-top: 1rem">
-          <span class="tag tag-blue">Team Leadership</span>
-          <span class="tag tag-blue">Research</span>
-        </div>
-      </div>
+  <div class="career-block pink-accent">
+    <div class="career-meta"><span class="career-title">Goals</span></div>
+    <p class="career-desc" style="margin-bottom:1rem;">
+      My immediate goal is to graduate with strong enough skills that I have real options. Long-term, I want a stable, well-paying role in software — ideally in an office environment where I'm solving interesting problems with a good team. Mobile development is where I've invested the most and feel most capable, but QA has shown me there's equal value in the work that keeps software running well.
+    </p>
+    <p class="career-desc">
+      Academically: finish my BSc at York by April 2027 with a portfolio of real work — not just course projects, but things I built and shipped. Keep my GPA above 3.7 because it tells me I'm actually understanding the material, not just getting through it.
+    </p>
+  </div>
 
-      <p class="sub-heading" style="margin-top: 2rem">— EDUCATION —</p>
+  <!-- INTERESTS & SKILLS -->
+  <p class="sub-heading" style="margin-top:2rem;">— INTERESTS & SKILLS —</p>
 
-      <div class="career-block">
-        <div class="career-meta">
-          <span class="career-title">BSc Computer Science</span>
-          <span class="career-date">Sep 2023 – Apr 2027 (Expected)</span>
-        </div>
-        <div class="career-org" style="color: var(--blue)">
-          York University · Toronto, Canada
-        </div>
-        <p class="career-desc">
-          GPA 3.73/4.00. Coursework in Software Design, Operating Systems,
-          Computer Networking, Data Structures & Algorithms, and Object-Oriented
-          Programming.
-        </p>
-        <div class="tags" style="margin-top: 1rem">
-          <span class="tag tag-blue">Software Engineering</span>
-          <span class="tag tag-blue">Agile / Scrum</span>
-          <span class="tag tag-blue">Mobile Dev</span>
-        </div>
-      </div>
-    </section>
+  <div class="career-block">
+    <div class="career-meta"><span class="career-title">What I'm Good At</span></div>
+    <p class="career-desc" style="margin-bottom:1rem;">
+      Technically: Kotlin and mobile development, test planning, automation scripting, and navigating unfamiliar codebases faster than I expected. I pick up new tools quickly when there's a real reason to use them.
+    </p>
+    <div class="tags" style="margin-top:1rem;">
+      <span class="tag tag-blue">Kotlin / KMP</span>
+      <span class="tag tag-blue">Test Planning</span>
+      <span class="tag tag-blue">Automation</span>
+      <span class="tag tag-blue">Cross-team Communication</span>
+      <span class="tag tag-blue">Problem Solving</span>
+    </div>
+  </div>
 
-    <hr class="section-divider" />
+  <div class="career-block">
+    <div class="career-meta"><span class="career-title">Personal Development Goals</span></div>
+    <p class="career-desc" style="margin-bottom:1rem;">
+      The clearest gap I identified in my self-assessment was around visibility and communication — I do the work, but I don't naturally surface it. So the most concrete thing I'm working on is a weekly Friday summary to my manager: what was tested, what broke, what's outstanding. It sounds simple, but writing it consistently forces me to synthesize my week rather than just move through it. Twenty-five of those by December 2026 is the target.
+    </p>
+    <p class="career-desc" style="margin-bottom:1rem;">
+      On the technical side, I want to go deeper into why bugs happen rather than just what happened. That means reading Kotlin source code to trace root causes, not just logging symptoms. I'm also working through a Spring Boot and KMP course — one module per week — connecting each piece to what I'm actually doing in the internship, not treating it as abstract study.
+    </p>
+    <p class="career-desc">
+      The goal I'm least comfortable with but most committed to: actively advocating for bug prioritization in sprint planning. I know what I find, I know why it matters, and I need to make that case out loud instead of assuming it's obvious. That starts in July 2026 and applies to every session from there.
+    </p>
+  </div>
 
-    <!-- PROJECT -->
-    <section id="projects">
-      <div class="section-label">// projects.db</div>
-      <h2>Featured <span>Project</span></h2>
+  <!-- VALUES & PERSONALITY -->
+  <p class="sub-heading" style="margin-top:2rem;">— VALUES & PERSONALITY —</p>
 
-      <div class="project-card">
-        <div class="project-name">Smart Travel Planner (Navi)</div>
-        <div class="project-role">
-          Team Lead · Scrum Master · Software Design Course — Fall 2025
-        </div>
-        <p class="project-desc">
-          Led a five-person team to build a cross-platform travel planning app
-          using Kotlin Multiplatform and Compose Multiplatform. Implemented
-          multi-level navigation with Decompose, location autocomplete with
-          geocoding, and integrated UI–domain–data layers for consistent state
-          management. Managed sprint planning and backlog refinement across the
-          full development cycle.
-        </p>
-        <div class="tags" style="margin-bottom: 1.5rem">
-          <span class="tag tag-pink">Kotlin Multiplatform</span>
-          <span class="tag tag-blue">Compose</span>
-          <span class="tag tag-pink">Decompose</span>
-          <span class="tag tag-blue">MapBox</span>
-          <span class="tag tag-pink">Ktor</span>
-          <span class="tag tag-blue">PostgreSQL</span>
-          <span class="tag tag-pink">Docker</span>
-        </div>
-        <a
-          href="https://github.com/Ciftelia/Navi"
-          class="btn btn-secondary"
-          target="_blank"
-          >View on GitHub ↗</a
-        >
-      </div>
-    </section>
+  <div class="career-block">
+    <div class="career-meta"><span class="career-title">Values & Personality</span></div>
+    <p class="career-desc" style="margin-bottom:1rem;">
+      I value work that is clear in its purpose and honest in its feedback. The QA role reinforced this: the whole job is to surface truth about a product, even when it's inconvenient. I value competence over credentials — the experiences that taught me the most were ones where I had to figure things out rather than follow a guide.
+    </p>
+    <p class="career-desc" style="margin-bottom:1rem;">
+      The person who shaped me most growing up was my mother. She handles difficult situations with composure, never needs to announce how capable she is, and just gets things done. Watching her taught me that reliability matters more than brilliance on its own — showing up and not falling apart when things get hard are the things that actually carry you through.
+    </p>
+    <p class="career-desc">
+      I am introverted — I don't naturally make my work visible unless there's a clear reason to. When I stay engaged and communicate regularly, things go well. When I go quiet, performance drops. Recognizing that pattern is part of why Goals 5 and 6 exist.
+    </p>
+  </div>
 
-    <hr class="section-divider" />
+  <!-- BUILDING CREDENTIALS -->
+  <p class="sub-heading" style="margin-top:2rem;">— BUILDING CREDENTIALS —</p>
 
-    <!-- RESUME -->
-    <section id="resume">
-      <div class="section-label">// resume.pdf</div>
-      <h2>My <span>Resume</span></h2>
-      <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem">
-        Full overview of my experience, education, and skills.
-      </p>
-      <div class="resume-box">
-        <span class="resume-icon">[ CV ]</span>
-        <p>Klodiana_Kamberi_Resume.pdf</p>
-        <a href="Klodiana-Kamberi-Resume.pdf" download class="btn btn-primary"
-          >Download Resume ↗</a
-        >
-      </div>
-    </section>
+  <div class="career-block">
+    <div class="career-meta"><span class="career-title">Accomplishments</span></div>
+    <div class="career-desc">
+      <ul>
+        <li>GPA 3.73/4.00 — maintained above 3.7 throughout the degree while working part-time research roles.</li>
+        <li>Recommended for a Teaching Assistant position by the Social Robotics Lab supervisor after the 2024 placement.</li>
+        <li>Initiated and shipped a root-cause bug reporting framework at FGF Brands — not asked for, self-directed.</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <span class="footer-name">© 2026 Klodiana Kamberi</span>
-      <div class="footer-links">
-        <a href="https://github.com/Ciftelia" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/klodiana-kamberi" target="_blank"
-          >LinkedIn</a
-        >
-      </div>
-    </footer>
+  <div class="reflection-block" style="margin-top:2rem;">
+    <div class="reflection-label">// reflection</div>
+    <p>Writing this section was uncomfortable in a useful way. I'm not naturally inclined to reflect on myself — I'd rather just do the next thing. But thinking about what I actually value, what I'm genuinely good at, and where I want to end up has made my goals feel less abstract. I know what kind of work I want to be doing, and I have a clearer sense of the gap between where I am now and where I want to be. That gap is smaller than it was a year ago, which is something.</p>
+  </div>
+</section>
 
-    <script>
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = "1";
-              entry.target.style.transform = "translateY(0)";
-              entry.target.style.transition =
-                "opacity 0.6s ease, transform 0.6s ease";
-            }
-          });
-        },
-        { threshold: 0.1 },
-      );
+<hr class="section-divider">
 
-      document
-        .querySelectorAll(".about-card, .career-block, .project-card")
-        .forEach((el) => {
-          el.style.opacity = "0";
-          el.style.transform = "translateY(20px)";
-          observer.observe(el);
-        });
-    </script>
-  </body>
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects">
+  <div class="section-label">// projects.db</div>
+  <h2>Featured <span>Project</span></h2>
+
+  <div class="project-card">
+    <div class="project-name">Smart Travel Planner (Navi)</div>
+    <div class="project-role">Team Lead · Scrum Master · Software Design Course — Fall 2025</div>
+    <p class="project-desc">
+      Led a five-person team to build a cross-platform travel planning app using Kotlin Multiplatform and Compose Multiplatform. Implemented multi-level navigation with Decompose, location autocomplete with geocoding, and integrated UI–domain–data layers for consistent state management. Managed sprint planning and backlog refinement across the full development cycle.
+    </p>
+    <div class="tags" style="margin-bottom:1.5rem;">
+      <span class="tag tag-pink">Kotlin Multiplatform</span>
+      <span class="tag tag-blue">Compose</span>
+      <span class="tag tag-pink">Decompose</span>
+      <span class="tag tag-blue">MapBox</span>
+      <span class="tag tag-pink">Ktor</span>
+      <span class="tag tag-blue">PostgreSQL</span>
+      <span class="tag tag-pink">Docker</span>
+    </div>
+    <a href="https://github.com/Ciftelia/Navi" class="btn btn-secondary" target="_blank">View on GitHub ↗</a>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ===================== RESUME ===================== -->
+<section id="resume">
+  <div class="section-label">// resume.pdf</div>
+  <h2>My <span>Resume</span></h2>
+  <p style="color:var(--muted);font-size:0.9rem;margin-bottom:2rem;">Full overview of my experience, education, and skills.</p>
+  <div style="border:1px solid rgba(255,30,180,0.18);border-radius:3px;overflow:hidden;margin-bottom:1.5rem;background:rgba(13,20,64,0.5);">
+    <iframe src="Klodiana-Kamberi-Resume.pdf" style="width:100%;height:680px;border:none;display:block;" title="Klodiana Kamberi Resume"></iframe>
+  </div>
+  <a href="Klodiana-Kamberi-Resume.pdf" class="btn btn-primary" download>Download Resume ↗</a>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <span class="footer-name">© 2026 Klodiana Kamberi &nbsp;·&nbsp; Last updated April 2026</span>
+  <div class="footer-links">
+    <a href="https://github.com/Ciftelia" target="_blank">GitHub</a>
+    <a href="mailto:klodiana.kamberi87@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/klodiana-kamberi" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.about-card, .career-block, .project-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    observer.observe(el);
+  });
+</script>
+</body>
 </html>
