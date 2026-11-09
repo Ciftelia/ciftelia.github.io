@@ -56,53 +56,37 @@
         <p class="eyebrow">01 · Team project · Fall 2025 · EECS 3311 Software Design</p>
         <h2 id="navi-title">Navi: collaborative trip planner</h2>
         <p class="lead">
-          A Kotlin Multiplatform app for planning trips with friends: create a trip, build a
-          day-by-day itinerary, add members and events, and see everything on a map. I led a
-          five-person team as Project Manager and Scrum Master.
+          A cross-platform app for planning trips with friends: a day-by-day itinerary, members,
+          events and a map. I led the five-person team.
         </p>
         <div class="btn-row" style="margin-top:4px">
           <a class="btn btn-ghost" href="https://github.com/Ciftelia/Navi" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.2-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
             View repository<span class="sr-only"> (opens in a new tab)</span>
           </a>
-          <span class="privacy-note">No public demo: runs locally (needs Docker + API keys)</span>
         </div>
       </div>
 
       <div class="project-grid">
         <div class="detail">
-          <h3>Tools, technologies &amp; methods</h3>
+          <h3>Tools, skills &amp; methods</h3>
+          <ul class="tags"><li class="tag">Kotlin</li><li class="tag">Compose Multiplatform</li><li class="tag">Decompose</li><li class="tag">Ktor</li><li class="tag">PostgreSQL</li><li class="tag">Docker</li><li class="tag">Mapbox API</li><li class="tag">Python</li><li class="tag">Jira</li></ul>
+          <p class="methods"><strong>Methods:</strong> Scrum with three sprints, MVVM, feature branches and pull-request reviews.</p>
+
+          <h3>My role</h3>
+          <p>Project Manager and Scrum Master; 74 of 258 commits.</p>
           <ul>
-            <li>Kotlin Multiplatform with Compose Multiplatform UI (Android, desktop/JVM and web targets)</li>
-            <li>Decompose for multi-level navigation; MVVM with view models, repositories and remote data sources</li>
-            <li>Ktor server backed by PostgreSQL in Docker; Mapbox Search Box API for places and coordinates</li>
-            <li>A separate Python service for AI-generated trip suggestions</li>
-            <li>Scrum: three sprints, Jira (SCRUM-xx tickets), feature branches and pull requests, burndown charts, sprint reviews</li>
+            <li>Built <strong>location autocomplete</strong> end to end, so every event gets map coordinates.</li>
+            <li>Built the <strong>Trip View</strong> and its four sub-flows with Decompose navigation.</li>
+            <li>Ran sprint planning, reviewed and merged PRs, and wrote the sprint documents.</li>
           </ul>
 
-          <h3>Skills</h3>
-          <div class="skill-group"><span>Languages</span>
-            <ul class="tags"><li class="tag">Kotlin</li><li class="tag">Python</li><li class="tag">SQL</li></ul></div>
-          <div class="skill-group"><span>Frameworks</span>
-            <ul class="tags"><li class="tag">Compose Multiplatform</li><li class="tag">Ktor</li><li class="tag">Decompose</li><li class="tag">kotlinx.serialization</li></ul></div>
-          <div class="skill-group"><span>Tools</span>
-            <ul class="tags"><li class="tag">Docker</li><li class="tag">PostgreSQL</li><li class="tag">Mapbox API</li><li class="tag">Git / GitHub</li><li class="tag">Jira</li></ul></div>
-
-          <h3>My role &amp; contributions</h3>
-          <p>Project Manager and Scrum Master, plus 74 of the project's 258 commits:</p>
+          <h3>Outcomes</h3>
           <ul>
-            <li>Built the <strong>location autocomplete</strong> end to end: a Ktor backend route that calls Mapbox, a shared <code>LocationTextField</code>, and a <code>LocationRepository</code> wired into the trip view model, so every event automatically gets coordinates for the map.</li>
-            <li>Built and refactored the <strong>Trip View</strong> and its four sub-flows (Add Event, Add Member, Edit Event, Edit Trip) using Decompose navigation.</li>
-            <li>Implemented the add, update and delete event UI and fixed navigation bugs (for example, the Home button failing in some states).</li>
-            <li>Ran sprint planning and backlog refinement, reviewed and merged pull requests, and wrote the sprint documents (system design, release plan, sprint reports).</li>
+            <li><strong>3 sprints, 40 merged PRs:</strong> a working app with trips, members, itinerary, calendar and map.</li>
+            <li>Location search replaced manual coordinate entry.</li>
           </ul>
 
-          <h3>Outcomes &amp; impact</h3>
-          <ul>
-            <li>Delivered three sprints with a working app: trips, members, a day-by-day itinerary, a calendar and a map view.</li>
-            <li>Location search returns places <em>and</em> points of interest, removing manual coordinate entry.</li>
-            <li>The five-person team shipped through 40 merged pull requests across three sprints.</li>
-          </ul>
 
           <h3>What I learned</h3>
           <p>
@@ -151,52 +135,31 @@
         <p class="eyebrow">02 · Personal project · November 2026</p>
         <h2 id="tv-title">TV-Fun: a voice-controlled TV home screen</h2>
         <p class="lead">
-          A simpler, bigger, friendlier Android TV home screen I built for a family member, where
-          pressing the remote's mic button sends the request to a sandboxed AI agent that can
-          open apps, search YouTube and speak answers on the TV. A matching phone launcher and a
-          weather screen came next.
+          A simpler Android TV home screen I built for a family member. Pressing the remote's mic
+          button sends the request to a sandboxed AI agent that opens apps, searches YouTube and
+          answers out loud.
         </p>
-        <div class="btn-row" style="margin-top:4px">
-          <span class="privacy-note">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-            Private repository (Ciftelia/TV-Fun): code walkthrough available on request
-          </span>
-        </div>
       </div>
 
       <div class="project-grid">
         <div class="detail">
-          <h3>Tools, technologies &amp; methods</h3>
+          <h3>Tools, skills &amp; methods</h3>
+          <ul class="tags"><li class="tag">Kotlin</li><li class="tag">Jetpack Compose</li><li class="tag">Android TV</li><li class="tag">Python</li><li class="tag">MCP</li><li class="tag">Docker</li><li class="tag">ADB</li><li class="tag">AI coding agents</li></ul>
+          <p class="methods"><strong>Methods:</strong> HTML mockups before building, emulator and on-device testing, a written decision log.</p>
+
+          <h3>My role</h3>
+          <p>Solo project (16 of 16 commits), built with AI coding agents.</p>
           <ul>
-            <li>Two Android apps in Kotlin and Jetpack Compose: a TV launcher (Android TV 11) and a phone launcher (Pixel)</li>
-            <li>Android's assistant role and <code>SpeechRecognizer</code> to capture voice from the remote</li>
-            <li>An HMAC-SHA256 signed webhook to an AI agent running in an isolated Docker container</li>
-            <li>A Python <strong>MCP server</strong> (Model Context Protocol) exposing five TV tools to the agent over ADB</li>
-            <li>HTML mockups checked with headless Chrome before building; testing on emulators; a written decision log and runbook</li>
+            <li>Designed the architecture and its <strong>security boundaries</strong>: a sandboxed agent and signed requests.</li>
+            <li>Made the product decisions and tested every change on the real TV.</li>
           </ul>
 
-          <h3>Skills</h3>
-          <div class="skill-group"><span>Languages</span>
-            <ul class="tags"><li class="tag">Kotlin</li><li class="tag">Python</li><li class="tag">HTML / CSS</li></ul></div>
-          <div class="skill-group"><span>Frameworks</span>
-            <ul class="tags"><li class="tag">Jetpack Compose</li><li class="tag">Android SDK</li><li class="tag">MCP (Python SDK)</li></ul></div>
-          <div class="skill-group"><span>Tools</span>
-            <ul class="tags"><li class="tag">Docker</li><li class="tag">ADB</li><li class="tag">Android emulator</li><li class="tag">Headless Chrome</li><li class="tag">AI coding agents</li></ul></div>
-
-          <h3>My role &amp; contributions</h3>
-          <p>Solo project: all 16 commits are mine. I owned the design and decisions and worked with AI coding agents to write much of the code.</p>
+          <h3>Outcomes</h3>
           <ul>
-            <li>Designed the architecture and its <strong>trust boundaries</strong>: the agent runs in its own container with only TV tools, and the webhook only accepts signed requests on the home network.</li>
-            <li>Made and documented the product decisions (layout, fonts, what the agent may and may not do) and rejected approaches that were risky, such as flashing the TV's OS.</li>
-            <li>Tested on the real TV and on emulators, drove a performance pass on a low-memory TV, and kept the documentation current for each work session.</li>
+            <li><strong>In daily use</strong> as the TV's Home screen; voice requests open the right app or video.</li>
+            <li>Cut frame time from <strong>32 ms to 25 ms</strong> on a low-memory TV.</li>
           </ul>
 
-          <h3>Outcomes &amp; impact</h3>
-          <ul>
-            <li>The launcher is the TV's real Home screen and is used every day; voice requests like "put on easy soup recipes" open the right YouTube results.</li>
-            <li>The performance pass cut typical frame time from about 32 ms to 25 ms on a TV with roughly 1.8 GB of RAM.</li>
-            <li>Added a weather screen with official alerts and themes, and a phone launcher with changeable app tiles (tested on an emulator).</li>
-          </ul>
 
           <h3>What I learned</h3>
           <p>
@@ -257,20 +220,6 @@
                  alt="TV weather screen mockup: large current temperature of 11 degrees and cloudy on the left, an 8-hour forecast and a 7-day forecast on the right">
             <figcaption>Weather screen design mockup (rendered with headless Chrome).</figcaption>
           </figure>
-
-          <figure>
-<pre class="code" tabindex="0" aria-label="Kotlin code: signing the webhook request with HMAC-SHA256"><code><span class="c">// HermesClient.kt (excerpt): sign every voice request</span>
-<span class="k">val</span> body = JSONObject()
-    .put(<span class="s">"text"</span>, text).put(<span class="s">"source"</span>, <span class="s">"tv-remote"</span>)
-    .toString().toByteArray()
-<span class="k">val</span> hmac = Mac.getInstance(<span class="s">"HmacSHA256"</span>)
-hmac.init(SecretKeySpec(secret.toByteArray(), <span class="s">"HmacSHA256"</span>))
-<span class="k">val</span> signature = hmac.doFinal(body)
-    .joinToString(<span class="s">""</span>) { <span class="s">"%02x"</span>.format(it) }
-connection.setRequestProperty(
-    <span class="s">"X-Hub-Signature-256"</span>, <span class="s">"sha256=$signature"</span>)</code></pre>
-            <figcaption>The secret is loaded from a config file at runtime, never from source code.</figcaption>
-          </figure>
         </div>
       </div>
     </article>
@@ -281,55 +230,38 @@ connection.setRequestProperty(
         <p class="eyebrow">03 · Hackathon · Agents for Impact 2026 · October 2026</p>
         <h2 id="food-title">RescueDispatch: AI food-surplus broker</h2>
         <p class="lead">
-          A one-day hackathon build: an AI agent that takes a donor's messy surplus offer ("10
-          crates of spinach, needs cold storage, must leave by 8pm"), finds pantries that can
-          <em>actually</em> take it in time, and drafts the pickup message. It weighs neighbourhood
-          need so the food goes where it helps most. I led the agent lane of a six-person team.
+          An AI agent that takes a donor's surplus offer ("10 crates of spinach, needs cold storage,
+          must leave by 8pm"), finds pantries that can <em>actually</em> take it in time, and drafts
+          the pickup message, favouring the neighbourhoods that need it most.
         </p>
         <div class="btn-row" style="margin-top:4px">
           <a class="btn btn-ghost" href="https://github.com/MarlonAEC/A4I2026-challenge-2-food-equity" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.2-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
             View repository<span class="sr-only"> (opens in a new tab)</span>
           </a>
-          <span class="privacy-note">Team repository · example Match Briefs in <code>briefs/</code></span>
         </div>
       </div>
 
       <div class="project-grid">
         <div class="detail">
-          <h3>Tools, technologies &amp; methods</h3>
+          <h3>Tools, skills &amp; methods</h3>
+          <ul class="tags"><li class="tag">Python</li><li class="tag">Google ADK</li><li class="tag">Gemini</li><li class="tag">MCP</li><li class="tag">BigQuery vector search</li><li class="tag">FastAPI</li><li class="tag">Docker</li><li class="tag">GitHub Actions</li></ul>
+          <p class="methods"><strong>Methods:</strong> six people split into lanes with a shared data contract, built in one day.</p>
+
+          <h3>My role</h3>
+          <p>Agent lane lead and top committer (26 of 82 commits).</p>
           <ul>
-            <li>Google <strong>Agent Development Kit (ADK)</strong> in Python with <strong>Gemini</strong> as the reasoning model, plus a sub-agent for onboarding new pantries</li>
-            <li><strong>BigQuery vector search</strong> over embedded pantry profiles, reached through <strong>MCP Toolbox for Databases</strong></li>
-            <li>Hard checks after the semantic search: cold chain and storage, profile contradictions, pickup time and pallet capacity</li>
-            <li>Equity-weighted routing using census poverty and car-access data, with a "logistics first" mode as an alternative</li>
-            <li>FastAPI backend serving the coordinator web app; GitHub Actions CI; Docker for Google Cloud deployment</li>
-            <li>Six people split into lanes (data, agent, front end, story), with a shared JSON contract between lanes and milestone tracking</li>
+            <li>Built the <strong>root AI agent</strong> and connected it to BigQuery through MCP Toolbox.</li>
+            <li>Built the <strong>pantry-intake sub-agent</strong> that onboards new pantries by conversation.</li>
+            <li>Wrote the API routes and the <strong>Match Brief</strong> generator.</li>
           </ul>
 
-          <h3>Skills</h3>
-          <div class="skill-group"><span>Languages</span>
-            <ul class="tags"><li class="tag">Python</li><li class="tag">SQL</li></ul></div>
-          <div class="skill-group"><span>Frameworks &amp; AI</span>
-            <ul class="tags"><li class="tag">Google ADK</li><li class="tag">Gemini</li><li class="tag">MCP</li><li class="tag">FastAPI</li><li class="tag">Pydantic</li></ul></div>
-          <div class="skill-group"><span>Tools</span>
-            <ul class="tags"><li class="tag">BigQuery (vector search)</li><li class="tag">Google Cloud</li><li class="tag">Docker</li><li class="tag">GitHub Actions</li><li class="tag">Git</li></ul></div>
-
-          <h3>My role &amp; contributions</h3>
-          <p>Agent lane lead and the team's top committer (26 of 82 commits, about 4,200 lines added):</p>
+          <h3>Outcomes</h3>
           <ul>
-            <li>Built the <strong>root ADK agent</strong>: its tools, system prompt and Gemini setup, and connected it to <strong>MCP Toolbox for Databases</strong> so it queries BigQuery directly.</li>
-            <li>Built the <strong>conversational pantry-intake sub-agent</strong>, which interviews a new pantry in plain language, turns the answers into structured storage and pickup data, flags contradictions, and registers the pantry so it shows up in search right away.</li>
-            <li>Added the <strong>HTTP API routes</strong> the front end uses for matching, briefs and intake, including passing the routing policy through.</li>
-            <li>Wrote the <strong>Match Brief generator</strong>, which turns the matcher's output into one-page decision cards; checked 7 real coordinator questions end to end; and set up API-key handling and CI.</li>
+            <li><strong>10 Match Briefs</strong>, each with a first choice, backups and a ready-to-send message.</li>
+            <li>Catches bad matches, like a "fresh produce" pantry with no fridge, and explains why.</li>
           </ul>
 
-          <h3>Outcomes &amp; impact</h3>
-          <ul>
-            <li>Produced 10 Match Briefs covering retail, farm and non-food surplus (for example spinach, 5 tons of potatoes, infant formula), each with a first choice, backups and a ready-to-send message.</li>
-            <li>The agent catches the "best match on meaning is wrong" traps, such as a pantry that talks about fresh produce but has no fridge, and explains why it skipped each one.</li>
-            <li>New pantries can be onboarded through a conversation instead of a form and become searchable immediately.</li>
-          </ul>
 
           <h3>What I learned</h3>
           <p>
@@ -397,22 +329,6 @@ connection.setRequestProperty(
             <img class="shot" src="assets/img/food-intake-agent.jpg" width="1280" height="800" loading="lazy"
                  alt="RescueDispatch pantry intake screen: coordinator interview answers on the left and the agent's live structured interpretation on the right, showing cold storage, loading dock, capacity, pickup window and refrigerated van">
             <figcaption>The pantry intake flow in the team's web app (demo data). The interview logic behind it is my intake sub-agent.</figcaption>
-          </figure>
-
-          <figure>
-<pre class="code" tabindex="0" aria-label="Python code: defining the root ADK agent with tools, MCP Toolbox and the intake sub-agent"><code><span class="c"># agent/agent.py (excerpt): the root broker agent</span>
-<span class="k">if</span> MCP_TOOLBOX_URL:
-    toolbox = ToolboxSyncClient(MCP_TOOLBOX_URL)
-    tools_list.extend(toolbox.load_toolset())  <span class="c"># BigQuery tools</span>
-
-root_agent = Agent(
-    name=<span class="s">"food_equity_surplus_broker"</span>,
-    model=os.environ.get(<span class="s">"ADK_MODEL"</span>, <span class="s">"gemini-3.8-flash"</span>),
-    instruction=SYSTEM_INSTRUCTION,
-    tools=tools_list,        <span class="c"># clock, matcher, recalls, traffic, audit</span>
-    sub_agents=[intake_agent],
-)</code></pre>
-            <figcaption>One agent, a set of tools, and a sub-agent it can hand new pantries to.</figcaption>
           </figure>
         </div>
       </div>
