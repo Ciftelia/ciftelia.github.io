@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Ciftelia</title>
+  <meta name="description" content="Three technical projects by Klodiana Kamberi: Navi, TV-Fun and RescueDispatch.">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b4fd8'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='monospace' font-size='18' font-weight='700' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">C</span>Ciftelia</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="container page-head" aria-labelledby="projects-title">
+      <p class="eyebrow">// projects</p>
+      <h1 id="projects-title">Projects</h1>
+      <p class="lead">
+        Three projects that show the range of what I build: a team-built cross-platform app, a
+        voice-controlled TV system with an AI agent, and an AI food-rescue broker built at a hackathon.
+      </p>
+      <ul class="toc" aria-label="Jump to a project">
+        <li><a class="tag" href="#navi">Navi: trip planner</a></li>
+        <li><a class="tag" href="#tv-fun">TV-Fun: voice-controlled TV</a></li>
+        <li><a class="tag" href="#food-broker">RescueDispatch: AI food broker</a></li>
+      </ul>
+    </section>
+
+    <!-- ===================== NAVI ===================== -->
+    <article class="project container" id="navi" aria-labelledby="navi-title">
+      <div class="project-head">
+        <p class="eyebrow">01 · Team project · Fall 2025 · EECS 3311 Software Design</p>
+        <h2 id="navi-title">Navi: collaborative trip planner</h2>
+        <p class="lead">
+          A Kotlin Multiplatform app for planning trips with friends: create a trip, build a
+          day-by-day itinerary, add members and events, and see everything on a map. I led a
+          five-person team as Project Manager and Scrum Master.
+        </p>
+        <div class="btn-row" style="margin-top:4px">
+          <a class="btn btn-ghost" href="https://github.com/Ciftelia/Navi" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.2-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            View repository<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+          <span class="privacy-note">No public demo: runs locally (needs Docker + API keys)</span>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <div class="detail">
+          <h3>Tools, technologies &amp; methods</h3>
+          <ul>
+            <li>Kotlin Multiplatform with Compose Multiplatform UI (Android, desktop/JVM and web targets)</li>
+            <li>Decompose for multi-level navigation; MVVM with view models, repositories and remote data sources</li>
+            <li>Ktor server backed by PostgreSQL in Docker; Mapbox Search Box API for places and coordinates</li>
+            <li>A separate Python service for AI-generated trip suggestions</li>
+            <li>Scrum: three sprints, Jira (SCRUM-xx tickets), feature branches and pull requests, burndown charts, sprint reviews</li>
+          </ul>
+
+          <h3>Skills</h3>
+          <div class="skill-group"><span>Languages</span>
+            <ul class="tags"><li class="tag">Kotlin</li><li class="tag">Python</li><li class="tag">SQL</li></ul></div>
+          <div class="skill-group"><span>Frameworks</span>
+            <ul class="tags"><li class="tag">Compose Multiplatform</li><li class="tag">Ktor</li><li class="tag">Decompose</li><li class="tag">kotlinx.serialization</li></ul></div>
+          <div class="skill-group"><span>Tools</span>
+            <ul class="tags"><li class="tag">Docker</li><li class="tag">PostgreSQL</li><li class="tag">Mapbox API</li><li class="tag">Git / GitHub</li><li class="tag">Jira</li></ul></div>
+
+          <h3>My role &amp; contributions</h3>
+          <p>Project Manager and Scrum Master, plus 74 of the project's 258 commits:</p>
+          <ul>
+            <li>Built the <strong>location autocomplete</strong> end to end: a Ktor backend route that calls Mapbox, a shared <code>LocationTextField</code>, and a <code>LocationRepository</code> wired into the trip view model, so every event automatically gets coordinates for the map.</li>
+            <li>Built and refactored the <strong>Trip View</strong> and its four sub-flows (Add Event, Add Member, Edit Event, Edit Trip) using Decompose navigation.</li>
+            <li>Implemented the add, update and delete event UI and fixed navigation bugs (for example, the Home button failing in some states).</li>
+            <li>Ran sprint planning and backlog refinement, reviewed and merged pull requests, and wrote the sprint documents (system design, release plan, sprint reports).</li>
+          </ul>
+
+          <h3>Outcomes &amp; impact</h3>
+          <ul>
+            <li>Delivered three sprints with a working app: trips, members, a day-by-day itinerary, a calendar and a map view.</li>
+            <li>Location search returns places <em>and</em> points of interest, removing manual coordinate entry.</li>
+            <li>The five-person team shipped through 40 merged pull requests across three sprints.</li>
+          </ul>
+
+          <h3>What I learned</h3>
+          <p>
+            Being Scrum Master was the hardest part for me. I'm introverted and don't naturally make my work visible, but running sprints meant speaking up, keeping five people aligned and saying out loud when something was at risk. On the technical side, putting the Mapbox calls behind our own Ktor endpoint kept the API key off the client and made the frontend simpler to test.
+          </p>
+        </div>
+
+        <div>
+          <figure>
+            <div class="shots-pair">
+              <img class="shot" src="assets/img/navi-home-view.jpg" width="480" height="1057" loading="lazy"
+                   alt="Navi home screen with a profile header and a My Trips list of trip cards, plus a New Trip button">
+              <img class="shot" src="assets/img/navi-trip-view.jpg" width="480" height="1057" loading="lazy"
+                   alt="Navi trip view for a sample trip called Mountain Retreat, showing dates, who's going, a trip summary and Day 1 events">
+            </div>
+            <figcaption>Home view and Trip View (sprint 2 build, sample data).</figcaption>
+          </figure>
+
+          <figure>
+<pre class="code" tabindex="0" aria-label="Kotlin code: Mapbox suggest call in the Ktor backend"><code><span class="c">// server/location/MapBoxService.kt (excerpt)</span>
+<span class="k">class</span> MapBoxService(<span class="k">private val</span> client: HttpClient) {
+    <span class="c">// Read lazily so startup and tests don't fail without a token</span>
+    <span class="k">private val</span> token: String <span class="k">by</span> lazy {
+        System.getenv(<span class="s">"MAPBOX_ACCESS_TOKEN"</span>)
+            ?: readTokenFromDotEnv()
+            ?: error(<span class="s">"MAPBOX_ACCESS_TOKEN is not set"</span>)
+    }
+
+    <span class="k">suspend fun</span> suggest(query: String, sessionId: String) =
+        client.get(<span class="s">"$baseUrl/suggest"</span>) {
+            parameter(<span class="s">"q"</span>, query)
+            parameter(<span class="s">"access_token"</span>, token)
+            parameter(<span class="s">"limit"</span>, 5)
+            parameter(<span class="s">"session_token"</span>, sessionId)
+        }.body&lt;LocationSuggestResponse&gt;()
+}</code></pre>
+            <figcaption>The backend keeps the Mapbox key server-side; the app only talks to Navi's own API.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===================== TV-FUN ===================== -->
+    <article class="project container" id="tv-fun" aria-labelledby="tv-title">
+      <div class="project-head">
+        <p class="eyebrow">02 · Personal project · November 2026</p>
+        <h2 id="tv-title">TV-Fun: a voice-controlled TV home screen</h2>
+        <p class="lead">
+          A simpler, bigger, friendlier Android TV home screen I built for a family member, where
+          pressing the remote's mic button sends the request to a sandboxed AI agent that can
+          open apps, search YouTube and speak answers on the TV. A matching phone launcher and a
+          weather screen came next.
+        </p>
+        <div class="btn-row" style="margin-top:4px">
+          <span class="privacy-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            Private repository (Ciftelia/TV-Fun): code walkthrough available on request
+          </span>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <div class="detail">
+          <h3>Tools, technologies &amp; methods</h3>
+          <ul>
+            <li>Two Android apps in Kotlin and Jetpack Compose: a TV launcher (Android TV 11) and a phone launcher (Pixel)</li>
+            <li>Android's assistant role and <code>SpeechRecognizer</code> to capture voice from the remote</li>
+            <li>An HMAC-SHA256 signed webhook to an AI agent running in an isolated Docker container</li>
+            <li>A Python <strong>MCP server</strong> (Model Context Protocol) exposing five TV tools to the agent over ADB</li>
+            <li>HTML mockups checked with headless Chrome before building; testing on emulators; a written decision log and runbook</li>
+          </ul>
+
+          <h3>Skills</h3>
+          <div class="skill-group"><span>Languages</span>
+            <ul class="tags"><li class="tag">Kotlin</li><li class="tag">Python</li><li class="tag">HTML / CSS</li></ul></div>
+          <div class="skill-group"><span>Frameworks</span>
+            <ul class="tags"><li class="tag">Jetpack Compose</li><li class="tag">Android SDK</li><li class="tag">MCP (Python SDK)</li></ul></div>
+          <div class="skill-group"><span>Tools</span>
+            <ul class="tags"><li class="tag">Docker</li><li class="tag">ADB</li><li class="tag">Android emulator</li><li class="tag">Headless Chrome</li><li class="tag">AI coding agents</li></ul></div>
+
+          <h3>My role &amp; contributions</h3>
+          <p>Solo project: all 16 commits are mine. I owned the design and decisions and worked with AI coding agents to write much of the code.</p>
+          <ul>
+            <li>Designed the architecture and its <strong>trust boundaries</strong>: the agent runs in its own container with only TV tools, and the webhook only accepts signed requests on the home network.</li>
+            <li>Made and documented the product decisions (layout, fonts, what the agent may and may not do) and rejected approaches that were risky, such as flashing the TV's OS.</li>
+            <li>Tested on the real TV and on emulators, drove a performance pass on a low-memory TV, and kept the documentation current for each work session.</li>
+          </ul>
+
+          <h3>Outcomes &amp; impact</h3>
+          <ul>
+            <li>The launcher is the TV's real Home screen and is used every day; voice requests like "put on easy soup recipes" open the right YouTube results.</li>
+            <li>The performance pass cut typical frame time from about 32 ms to 25 ms on a TV with roughly 1.8 GB of RAM.</li>
+            <li>Added a weather screen with official alerts and themes, and a phone launcher with changeable app tiles (tested on an emulator).</li>
+          </ul>
+
+          <h3>What I learned</h3>
+          <p>
+            With AI coding agents writing much of the code, my job became a lot like my QA role: deciding what "working" means, testing on the real TV and catching the edge cases the agent missed. You can't steer an agent well without understanding the system deeply. Giving an agent control of a real device also made me plan security up front (least privilege, signed requests, a sandbox) instead of patching it later.
+          </p>
+        </div>
+
+        <div>
+          <figure>
+            <div class="diagram">
+              <svg viewBox="0 0 460 420" role="img" aria-labelledby="tv-diag-title tv-diag-desc">
+                <title id="tv-diag-title">TV-Fun architecture</title>
+                <desc id="tv-diag-desc">The remote's mic button opens the TV launcher's voice screen, which turns speech into text and sends it in a signed webhook to an AI agent in a Docker container. The agent calls MCP tools that control the TV over ADB, and can show a caption and speak a reply on the TV.</desc>
+                <defs><marker id="arr-tv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrowhead" d="M0 0 10 5 0 10z"/></marker></defs>
+                <rect class="box" x="20" y="16" width="170" height="56" rx="10"/>
+                <text class="t" x="105" y="40" text-anchor="middle">Remote mic button</text>
+                <text class="s" x="105" y="58" text-anchor="middle">Bluetooth voice</text>
+
+                <rect class="box-accent" x="20" y="120" width="170" height="120" rx="10"/>
+                <text class="t" x="105" y="144" text-anchor="middle">TV launcher app</text>
+                <text class="s" x="105" y="166" text-anchor="middle">Compose home screen</text>
+                <text class="s" x="105" y="184" text-anchor="middle">Voice → text</text>
+                <text class="s" x="105" y="202" text-anchor="middle">Caption + text-to-speech</text>
+                <text class="s" x="105" y="220" text-anchor="middle">Weather screen</text>
+
+                <rect class="box-accent" x="270" y="120" width="170" height="120" rx="10"/>
+                <text class="t" x="355" y="144" text-anchor="middle">AI agent</text>
+                <text class="s" x="355" y="166" text-anchor="middle">Docker container</text>
+                <text class="s" x="355" y="184" text-anchor="middle">TV tools only,</text>
+                <text class="s" x="355" y="202" text-anchor="middle">no access to the host</text>
+
+                <rect class="box" x="270" y="300" width="170" height="80" rx="10"/>
+                <text class="t" x="355" y="326" text-anchor="middle">MCP server (Python)</text>
+                <text class="s" x="355" y="346" text-anchor="middle">list / open apps, search,</text>
+                <text class="s" x="355" y="362" text-anchor="middle">say on TV</text>
+
+                <rect class="box" x="20" y="300" width="170" height="80" rx="10"/>
+                <text class="t" x="105" y="326" text-anchor="middle">Android TV OS</text>
+                <text class="s" x="105" y="346" text-anchor="middle">apps, YouTube,</text>
+                <text class="s" x="105" y="362" text-anchor="middle">ADB</text>
+
+                <path class="line" d="M105 72v44" marker-end="url(#arr-tv)"/>
+                <path class="line" d="M190 165h76" marker-end="url(#arr-tv)"/>
+                <text class="s" x="228" y="156" text-anchor="middle">HMAC-signed</text>
+                <text class="s" x="228" y="182" text-anchor="middle">webhook</text>
+                <path class="line" d="M355 240v56" marker-end="url(#arr-tv)"/>
+                <path class="line" d="M270 340h-76" marker-end="url(#arr-tv)"/>
+                <text class="s" x="232" y="332" text-anchor="middle">ADB</text>
+                <path class="line" d="M105 300v-56" marker-end="url(#arr-tv)"/>
+                <text class="s" x="140" y="276" text-anchor="start">reply</text>
+              </svg>
+            </div>
+            <figcaption>Architecture diagram (simplified; network details left out on purpose).</figcaption>
+          </figure>
+
+          <figure>
+            <img class="shot" src="assets/img/tvfun-weather-screen.jpg" width="1280" height="720" loading="lazy"
+                 alt="TV weather screen mockup: large current temperature of 11 degrees and cloudy on the left, an 8-hour forecast and a 7-day forecast on the right">
+            <figcaption>Weather screen design mockup (rendered with headless Chrome).</figcaption>
+          </figure>
+
+          <figure>
+<pre class="code" tabindex="0" aria-label="Kotlin code: signing the webhook request with HMAC-SHA256"><code><span class="c">// HermesClient.kt (excerpt): sign every voice request</span>
+<span class="k">val</span> body = JSONObject()
+    .put(<span class="s">"text"</span>, text).put(<span class="s">"source"</span>, <span class="s">"tv-remote"</span>)
+    .toString().toByteArray()
+<span class="k">val</span> hmac = Mac.getInstance(<span class="s">"HmacSHA256"</span>)
+hmac.init(SecretKeySpec(secret.toByteArray(), <span class="s">"HmacSHA256"</span>))
+<span class="k">val</span> signature = hmac.doFinal(body)
+    .joinToString(<span class="s">""</span>) { <span class="s">"%02x"</span>.format(it) }
+connection.setRequestProperty(
+    <span class="s">"X-Hub-Signature-256"</span>, <span class="s">"sha256=$signature"</span>)</code></pre>
+            <figcaption>The secret is loaded from a config file at runtime, never from source code.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===================== FOOD EQUITY BROKER ===================== -->
+    <article class="project container" id="food-broker" aria-labelledby="food-title">
+      <div class="project-head">
+        <p class="eyebrow">03 · Hackathon · Agents for Impact 2026 · October 2026</p>
+        <h2 id="food-title">RescueDispatch: AI food-surplus broker</h2>
+        <p class="lead">
+          A one-day hackathon build: an AI agent that takes a donor's messy surplus offer ("10
+          crates of spinach, needs cold storage, must leave by 8pm"), finds pantries that can
+          <em>actually</em> take it in time, and drafts the pickup message. It weighs neighbourhood
+          need so the food goes where it helps most. I led the agent lane of a six-person team.
+        </p>
+        <div class="btn-row" style="margin-top:4px">
+          <a class="btn btn-ghost" href="https://github.com/MarlonAEC/A4I2026-challenge-2-food-equity" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.2-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.5.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            View repository<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+          <span class="privacy-note">Team repository · example Match Briefs in <code>briefs/</code></span>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <div class="detail">
+          <h3>Tools, technologies &amp; methods</h3>
+          <ul>
+            <li>Google <strong>Agent Development Kit (ADK)</strong> in Python with <strong>Gemini</strong> as the reasoning model, plus a sub-agent for onboarding new pantries</li>
+            <li><strong>BigQuery vector search</strong> over embedded pantry profiles, reached through <strong>MCP Toolbox for Databases</strong></li>
+            <li>Hard checks after the semantic search: cold chain and storage, profile contradictions, pickup time and pallet capacity</li>
+            <li>Equity-weighted routing using census poverty and car-access data, with a "logistics first" mode as an alternative</li>
+            <li>FastAPI backend serving the coordinator web app; GitHub Actions CI; Docker for Google Cloud deployment</li>
+            <li>Six people split into lanes (data, agent, front end, story), with a shared JSON contract between lanes and milestone tracking</li>
+          </ul>
+
+          <h3>Skills</h3>
+          <div class="skill-group"><span>Languages</span>
+            <ul class="tags"><li class="tag">Python</li><li class="tag">SQL</li></ul></div>
+          <div class="skill-group"><span>Frameworks &amp; AI</span>
+            <ul class="tags"><li class="tag">Google ADK</li><li class="tag">Gemini</li><li class="tag">MCP</li><li class="tag">FastAPI</li><li class="tag">Pydantic</li></ul></div>
+          <div class="skill-group"><span>Tools</span>
+            <ul class="tags"><li class="tag">BigQuery (vector search)</li><li class="tag">Google Cloud</li><li class="tag">Docker</li><li class="tag">GitHub Actions</li><li class="tag">Git</li></ul></div>
+
+          <h3>My role &amp; contributions</h3>
+          <p>Agent lane lead and the team's top committer (26 of 82 commits, about 4,200 lines added):</p>
+          <ul>
+            <li>Built the <strong>root ADK agent</strong>: its tools, system prompt and Gemini setup, and connected it to <strong>MCP Toolbox for Databases</strong> so it queries BigQuery directly.</li>
+            <li>Built the <strong>conversational pantry-intake sub-agent</strong>, which interviews a new pantry in plain language, turns the answers into structured storage and pickup data, flags contradictions, and registers the pantry so it shows up in search right away.</li>
+            <li>Added the <strong>HTTP API routes</strong> the front end uses for matching, briefs and intake, including passing the routing policy through.</li>
+            <li>Wrote the <strong>Match Brief generator</strong>, which turns the matcher's output into one-page decision cards; checked 7 real coordinator questions end to end; and set up API-key handling and CI.</li>
+          </ul>
+
+          <h3>Outcomes &amp; impact</h3>
+          <ul>
+            <li>Produced 10 Match Briefs covering retail, farm and non-food surplus (for example spinach, 5 tons of potatoes, infant formula), each with a first choice, backups and a ready-to-send message.</li>
+            <li>The agent catches the "best match on meaning is wrong" traps, such as a pantry that talks about fresh produce but has no fridge, and explains why it skipped each one.</li>
+            <li>New pantries can be onboarded through a conversation instead of a form and become searchable immediately.</li>
+          </ul>
+
+          <h3>What I learned</h3>
+          <p>
+            A hackathon is about as close as it gets to working without a spec: one day, six people and a problem none of us had seen before. My biggest lesson was that the AI should not make every decision. I let Gemini run the conversation but kept hard rules, like "a household fridge is not a walk-in cooler", in plain, testable code. Splitting into lanes with a shared data contract is how we built one product without stepping on each other.
+          </p>
+        </div>
+
+        <div>
+          <figure>
+            <div class="diagram">
+              <svg viewBox="0 0 460 470" role="img" aria-labelledby="food-diag-title food-diag-desc">
+                <title id="food-diag-title">RescueDispatch matching pipeline</title>
+                <desc id="food-diag-desc">A donor's surplus offer goes to the ADK agent running Gemini. The agent checks the shelf-life clock, runs a BigQuery vector search through MCP Toolbox, applies hard checks for storage, contradictions, time and capacity, then ranks with equity-weighted routing and produces a Match Brief with a drafted message. A separate intake sub-agent interviews new pantries and adds them to the searchable data.</desc>
+                <defs><marker id="arr-food" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="arrowhead" d="M0 0 10 5 0 10z"/></marker></defs>
+
+                <rect class="box" x="20" y="14" width="200" height="54" rx="10"/>
+                <text class="t" x="120" y="37" text-anchor="middle">Donor's offer</text>
+                <text class="s" x="120" y="55" text-anchor="middle">free text, on a clock</text>
+
+                <rect class="box-accent" x="20" y="100" width="200" height="64" rx="10"/>
+                <text class="t" x="120" y="126" text-anchor="middle">ADK agent (Gemini)</text>
+                <text class="s" x="120" y="146" text-anchor="middle">plans and calls tools</text>
+
+                <rect class="box" x="20" y="196" width="200" height="54" rx="10"/>
+                <text class="t" x="120" y="219" text-anchor="middle">Shelf-life clock</text>
+                <text class="s" x="120" y="237" text-anchor="middle">how many hours are left</text>
+
+                <rect class="box" x="20" y="282" width="200" height="54" rx="10"/>
+                <text class="t" x="120" y="305" text-anchor="middle">Vector search</text>
+                <text class="s" x="120" y="323" text-anchor="middle">BigQuery via MCP Toolbox</text>
+
+                <rect class="box" x="20" y="368" width="200" height="80" rx="10"/>
+                <text class="t" x="120" y="392" text-anchor="middle">Hard checks + routing</text>
+                <text class="s" x="120" y="412" text-anchor="middle">cold chain · contradictions</text>
+                <text class="s" x="120" y="428" text-anchor="middle">time · pallets · equity</text>
+
+                <rect class="box-accent" x="260" y="368" width="180" height="80" rx="10"/>
+                <text class="t" x="350" y="392" text-anchor="middle">Match Brief</text>
+                <text class="s" x="350" y="412" text-anchor="middle">first choice + backups</text>
+                <text class="s" x="350" y="428" text-anchor="middle">drafted message</text>
+
+                <rect class="box-accent" x="260" y="100" width="180" height="64" rx="10"/>
+                <text class="t" x="350" y="126" text-anchor="middle">Intake sub-agent</text>
+                <text class="s" x="350" y="146" text-anchor="middle">interviews new pantries</text>
+
+                <rect class="box" x="260" y="282" width="180" height="54" rx="10"/>
+                <text class="t" x="350" y="305" text-anchor="middle">Pantry profiles</text>
+                <text class="s" x="350" y="323" text-anchor="middle">embedded in BigQuery</text>
+
+                <path class="line" d="M120 68v28" marker-end="url(#arr-food)"/>
+                <path class="line" d="M120 164v28" marker-end="url(#arr-food)"/>
+                <path class="line" d="M120 250v28" marker-end="url(#arr-food)"/>
+                <path class="line" d="M120 336v28" marker-end="url(#arr-food)"/>
+                <path class="line" d="M220 408h36" marker-end="url(#arr-food)"/>
+                <path class="line" d="M220 132h36" marker-end="url(#arr-food)"/>
+                <path class="line" d="M350 164v114" marker-end="url(#arr-food)"/>
+                <text class="s" x="358" y="226" text-anchor="start">registers</text>
+                <path class="line" d="M260 309h-36" marker-end="url(#arr-food)"/>
+              </svg>
+            </div>
+            <figcaption>How an offer becomes a Match Brief. The parts I owned are highlighted.</figcaption>
+          </figure>
+
+          <figure>
+            <img class="shot" src="assets/img/food-intake-agent.jpg" width="1280" height="800" loading="lazy"
+                 alt="RescueDispatch pantry intake screen: coordinator interview answers on the left and the agent's live structured interpretation on the right, showing cold storage, loading dock, capacity, pickup window and refrigerated van">
+            <figcaption>The pantry intake flow in the team's web app (demo data). The interview logic behind it is my intake sub-agent.</figcaption>
+          </figure>
+
+          <figure>
+<pre class="code" tabindex="0" aria-label="Python code: defining the root ADK agent with tools, MCP Toolbox and the intake sub-agent"><code><span class="c"># agent/agent.py (excerpt): the root broker agent</span>
+<span class="k">if</span> MCP_TOOLBOX_URL:
+    toolbox = ToolboxSyncClient(MCP_TOOLBOX_URL)
+    tools_list.extend(toolbox.load_toolset())  <span class="c"># BigQuery tools</span>
+
+root_agent = Agent(
+    name=<span class="s">"food_equity_surplus_broker"</span>,
+    model=os.environ.get(<span class="s">"ADK_MODEL"</span>, <span class="s">"gemini-3.8-flash"</span>),
+    instruction=SYSTEM_INSTRUCTION,
+    tools=tools_list,        <span class="c"># clock, matcher, recalls, traffic, audit</span>
+    sub_agents=[intake_agent],
+)</code></pre>
+            <figcaption>One agent, a set of tools, and a sub-agent it can hand new pantries to.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Ciftelia</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
